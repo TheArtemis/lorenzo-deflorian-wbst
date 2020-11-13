@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './dist/index.css'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+class Page extends React.Component { 
+    render() {
+        return <div className="title-box">
+            <TheTitle name="Lorenzo Deflorian" subtitle="a creator."/>
+        </div>
+    }
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function TheTitle(props) {
+    return (
+        <div>
+            <h1 className="title">{props.name}</h1>
+            <h3 className="subtitle">{props.subtitle}</h3>
+        </div>
+    );
+}
+
+ReactDOM.render(<Page />, document.getElementById('root'))

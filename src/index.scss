@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+$NotoJP: 'Noto Sans JP', sans-serif;
+
+#page {
+  color: black;
+}
+
+.title-box {
+    text-align: center;
+    font-family: $NotoJP;    
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.title {
+  font-family: $NotoJP;
+  font-size: 1.5rem;
+  color: blueviolet;
+}
+
+.subtitle {
+    font-family: $NotoJP;
+}
+

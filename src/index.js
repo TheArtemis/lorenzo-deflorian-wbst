@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './dist/index.css'
+import './scss/dist/index.css'
 
 class Page extends React.Component { 
     render() {
